@@ -29,6 +29,7 @@ My second project is dedicated to using the back end skills I learned over the p
 
 #### Matrix 
 
+https://github.com/cairait/Project2_frontend/blob/master/bookclubmatrix.jpg
 
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
