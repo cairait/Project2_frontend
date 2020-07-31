@@ -25,7 +25,7 @@ My second project is dedicated to using the back end skills I learned over the p
 
 - [Mobile](https://github.com/cairait/Project2_frontend/blob/master/bookclub3.jpeg)
 - [Tablet](https://github.com/cairait/Project2_frontend/blob/master/bookclub2.jpeg)
-- [Desktop] (https://github.com/cairait/Project2_frontend/blob/master/bookclub1.jpeg)
+- [Desktop](https://github.com/cairait/Project2_frontend/blob/master/bookclub1.jpeg)
 
 #### Matrix 
 
