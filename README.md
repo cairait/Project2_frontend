@@ -12,6 +12,18 @@
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
+|Deliverable	| Status	| Time Spent |
+| --- | :---: |  :---: | 
+| Day 1 | Project Proposal | Complete | 8hr |
+| Day 2 | Research & Development	| Incomplete	| |
+| Day 3 | Backend: Build server & create Mongoose models | Inomplete | |
+| Day 4 | Backend: Complete backend, deployment, and test with Postman | Incomplete | |
+| Day 5 | Backend: Basic frontend build & have frontend consume API | Incomplete | |
+| Day 6 | Frontend: Frontend build (mobile first) | Incomplete | |
+| Day 7 | Frontend: Hamburger menu and deploy | Incomplete | |
+| Day 8 | Frontend: Cross-browser testing and final touches  | Incomplete | |
+| Day 9 | Presentation | Incomplete | |
+
 
 ## Project Description
 
@@ -19,7 +31,7 @@ My second project is dedicated to using the back end skills I learned over the p
 
 ## Google Sheet
 
-
+https://docs.google.com/spreadsheets/d/1DRhpnHYU-LVnRYKSALXm_xbMCZ3FsTs6Zl-VJ1MU49E/edit#gid=0
 
 ## Wireframes
 
