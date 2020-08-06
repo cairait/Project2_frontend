@@ -9,6 +9,7 @@ const deployedURL = "https://cairaproject2.herokuapp.com";
 const URL = deployedURL ? deployedURL : "http://localhost:3000";
 
 const $ul = $("ul");
+const $form= $(".form");
 const $bookName = $("#bookname");
 const $bookDes = $("#bookdescription");
 const $submitButton = $("#submitbutton");
@@ -18,6 +19,8 @@ const $submitButton = $("#submitbutton");
 
 
 //shows all books ***** SHOWING THAT FOREACH IS NOT A FUNCTION
+
+
 
 const getAllBooks = async () => {
     const response = await fetch(`${URL}/books`);
@@ -32,7 +35,7 @@ const getAllBooks = async () => {
         editBook(request._id))
 
         $li.append($deletebutton, $editbutton);
-        $ul.append($li);
+        $ul.prepend($li);
         
     })
 };
@@ -60,6 +63,7 @@ const createBook = async () => {
 
     // update the DOM with new Book
       //empty the <ul>
+    $form.hide();
     $ul.empty();
     getAllBooks()
   }
@@ -70,25 +74,32 @@ const createBook = async () => {
           method: 'delete'
       })
       console.log(response)
+      $form.show();
       getAllBooks()
   }
 
   //edits a book
   const editBook = async (bookid) => {
-      const response = await fetch(`${URL}/books/${bookid}`, {
-          method: 'update'
+    
+    const response = await fetch(`${URL}/books/${bookid}`, {
+          method: 'put'
       })
       console.log(response)
+      $form.show();
       getAllBooks()
   }
 
-// //updates comment
+
+ 
+
+
+// //updates book
 // const update = async (req, res) => {
 //     try {
-//       const updatedComments = await Comment.findByIdAndUpdate(req.params.id, req.body, {
+//       const editBook = await Book.findByIdAndUpdate(req.params.id, req.body, {
 //         new: true,
 //       });
-//       res.status(200).json(updatedRat);
+//       res.status(200).json(editBook);
 //     } catch (error) {
 //       res.status(400).send(error);
 //     }
@@ -115,6 +126,25 @@ const createBook = async () => {
 // initial getting of books
 getAllBooks();
 // add create function to button click event listener
+
+// $(document).ready(function(){
+//   $(".submitButton").click(function(){
+//     $(".form").hide();
+//   });
+//   $("editbutton").click(function(){
+//     $("form").show();
+//   });
+// });
+
+
+
+
 $submitButton.on('click', createBook)
+// $submitButton.on('click', $(".form").hide())
 // add update function to edit submit button
 // $editButton.on('click', updateRat)
+
+
+
+
+// $(".form").hide())
