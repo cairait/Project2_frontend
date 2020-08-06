@@ -7,7 +7,8 @@
 
 body {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 175px;
+    padding-top: 25px;
 }
 
 h1 {
@@ -23,3 +24,7 @@ li {
     padding: 15px;
 }
 
+.form {
+    text-align: center;
+
+}
